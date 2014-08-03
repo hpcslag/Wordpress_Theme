@@ -1,0 +1,49 @@
+#container { 
+	width: 540px; 
+	height: 320px; 
+	background: url(couple.jpg) 0 0 no-repeat;
+	border: 1px solid #ccc; 
+	position: relative; 		
+}
+
+.img_transition { 
+	transition-duration: 0.5s; 			/* W3C */	
+	-webkit-transition-duration: 0.5s;  /* Google Chrome/Safari Support */
+	-moz-transition-duration: 0.5s; 	/* Mozilla Firefox Support */ 
+	-o-transition-duration: 0.5s; 		/* Opera Support */
+	overflow: hidden;
+	height: 0px; 
+}
+
+#container:hover .img_transition { 
+	height: 28px; 
+}
+
+.show-message { 
+	transform-origin: top;				/* W3C */
+	transition-duration: 0.5s;			/* W3C */	
+
+	-webkit-transform-origin: top;		/* Google Chrome/Safari Support */
+	-webkit-transition-duration: 0.5s;	/* Google Chrome/Safari Support */
+
+	-moz-transform-origin: top;			/* Mozilla Firefox Support */
+	-moz-transition-duration: 0.5s;		/* Mozilla Firefox Support */
+
+	-o-transform-origin: top; 			/* Opera Support */
+	-o-transition-duration: 0.5s;		/* Opera Support */
+
+	font-size: 16px;
+	font-family: Arial;		
+	font-weight: normal;
+	color: #FFF;		
+}
+
+#container:hover .show-message { 
+	background: rgba(0, 0, 0, 0.5);	
+	color: #fff;
+	height: 115px;		
+	transform: rotateX(0deg); 			/* W3C */	
+	-webkit-transform: rotateX(0deg); 	/* Google Chrome/Safari Support */
+	-moz-transform: rotateX(0deg); 		/* Mozilla Firefox Support */ 
+	-o-transform: rotateX(0deg); 		/* Opera Support */
+}

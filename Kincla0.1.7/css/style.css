@@ -1,0 +1,60 @@
+/*************************************************************
+Only for demo purpose
+Author: Dzyngiri.com
+Article link: http://www.dzyngiri.com/pull-to-refresh/
+**************************************************************/
+
+html, body, .container{ height: 100%; margin: 0; padding: 0; }
+body{
+	min-width: 320px;
+	background-color:#e5512d;
+}
+body{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight:normal;
+	font-weight: 200;
+	letter-spacing: 2px;
+	line-height: 14px;
+	color: #eee;
+	background:#5c4649 url(../images/darkbg.jpg) repeat;
+}
+
+a{
+	color: #999;
+	text-decoration: none;
+}
+a:hover{
+	color: #e5512d;
+	background-color:#FFF;
+}
+.container{
+	max-width: 1200px;;
+	text-align:center;
+	margin:50px auto 0;
+}
+.text {
+	max-width:900px;
+	margin:0 auto;
+	text-align:center;
+}
+.text .big {
+	font-size: 24px;
+    padding: 40px 0;
+}
+.copyright{
+	font-weight:400;
+	font-size:12px;
+	padding: 20px 0;
+	border-top:2px dashed #ee4e1d;
+	margin-top:60px;
+}
+@media screen and (max-width: 400px){
+	.container img{
+		-webkit-transform: scale(0.6);
+		-moz-transform: scale(0.6);
+		-o-transform: scale(0.6);
+		-ms-transform: scale(0.6);
+		-webkit-transform: scale(0.6);
+	}
+}
